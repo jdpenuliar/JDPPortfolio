@@ -12,6 +12,7 @@ module.exports = function(app){
 		data.thumbnail = "https://images-na.ssl-images-amazon.com/images/I/61QHnD41%2BOL._SS500.jpg";
 		haha.push(data);
 		data = {};
-		res.send(haha);
+		console.log("hahadata\n",haha);
+		res.json("qwer");
 	});
-}
+};
