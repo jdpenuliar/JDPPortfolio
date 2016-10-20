@@ -10,7 +10,7 @@ module.exports = function(app){
 		haha.push(data);
 		data = {};
 		console.log("hahadata\n",haha);
-		res.json(haha);
+		res.send(haha);
 	});
 	app.get("/haha",function(req,res){
 		res.send("haha");
