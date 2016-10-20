@@ -1,7 +1,4 @@
 module.exports = function(app){
-	app.get("/haha",function(req,res){
-		res.send("haha");
-	});
 	app.get("/albums/api/haha",function(req,res){
 		var haha = [];
 		var data = {};
@@ -14,5 +11,8 @@ module.exports = function(app){
 		data = {};
 		console.log("hahadata\n",haha);
 		res.json("qwer");
+	});
+	app.get("/haha",function(req,res){
+		res.send("haha");
 	});
 };
