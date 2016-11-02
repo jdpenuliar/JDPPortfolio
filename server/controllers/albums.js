@@ -7,11 +7,12 @@ module.exports = (function(){
 	return{
 		index: function(req,res){
 			Album.find({}, function(err, data) {
-			    if (!err){ 
-			        res.json(data);
-			    } else {
-			    	throw err;
-			    }
+				if (!err){ 
+					res.setHeader('Content-Type', 'application/json');
+					res.json(data);
+				} else {
+					throw err;
+				}
 			});
 		},
 		create: function(req,res){
