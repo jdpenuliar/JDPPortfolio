@@ -7,12 +7,15 @@ module.exports = (function(){
 	return{
 		index: function(req,res){
 			Album.find({}, function(err, data) {
-				if (!err){ 
-					res.json(data);
+				if (!err){
+					
+				    // set content type to json
+				    res.setHeader('Content-Type', 'application/json');
+				    res.json(data);
 				} else {
 					res.json(err);
 				}
-			});
+				});
 		},
 		create: function(req,res){
 			var newAlbum = new Album({
