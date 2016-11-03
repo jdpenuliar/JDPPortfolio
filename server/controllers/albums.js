@@ -9,9 +9,9 @@ module.exports = (function(){
 			Album.find({}, function(err, data) {
 				if (!err){ 
 					res.setHeader('Content-Type', 'application/json');
-					res.json(data);
+					res.send(data);
 				} else {
-					throw err;
+					res.json(err);
 				}
 			});
 		},
