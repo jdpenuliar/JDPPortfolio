@@ -8,7 +8,6 @@ module.exports = (function(){
 		index: function(req,res){
 			Album.find({}, function(err, data) {
 				if (!err){ 
-					res.setHeader('Content-Type', 'application/json');
 					res.json(data);
 				} else {
 					res.json(err);
