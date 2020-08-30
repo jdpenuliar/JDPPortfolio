@@ -1,3 +1,13 @@
+To start project on dev run 
+
+`docker-compose up --build`
+
+got to:
+
+`localhost:3000` as per docker-compose.yml
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
