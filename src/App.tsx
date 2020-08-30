@@ -1,6 +1,10 @@
-import React from 'react';
+import React from 'react'
 import logo from './logo.svg';
 import './App.css';
+import './materialize_content/css/materialize.css';
+import './materialize_content/css/style.css';
+import python001 from './python001.png'
+
 
 function App() {
   return (
@@ -8,7 +12,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          JD was here
+        </p>
+        <p>
+          He is with a great team now at Facebook
         </p>
         <a
           className="App-link"
